@@ -1,0 +1,85 @@
+h1{
+    text-indent:2em; /*缩进*/
+    color:midnightblue;
+    font-family: "楷体";
+}
+body{
+    max-width:1000px;
+    background-image: url("12.jpg");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position:2px 9px;
+    zoom:6; /*控制缩放大小*/
+}
+#header {
+    background-image: url("大门口.png");
+    width: 1000px;
+    height:250px;
+    border: solid 1px mediumblue;
+}
+#center{
+    width:1000px;
+    height:500px;
+}
+.cl{
+    width:300px;
+    height:170px;
+    border: solid 1px mediumblue;
+    background-color: aqua;
+}
+.cc{
+    width:394px;
+    height:500px;
+    background-color:lemonchiffon;
+
+}
+.cc h3{
+    text-indent:8em;
+}
+.cr{
+    width:300px;
+    height:500px;
+    background-color:dodgerblue;
+}
+.cl,.cc,.cr {
+    float: left;
+}
+#footer{
+    width:1000px;
+    height:250px;
+    border:solid 1px mediumblue;
+}
+.f1{
+    background-color:pink;
+}
+h3{
+    text-indent:6em;
+
+}
+input{
+    background-color:white;
+}
+#j1{
+    text-align:center; /* 文字居中 */
+}
+#j1 a{
+    color:black;
+    font-size:15px;
+    text-align:center; /* 文字居中 */
+    text-decoration: none;
+    background-color: white;
+}
+#j1 p{
+    text-align:center; /* 文字居中 */
+    color:red;
+    text-indent:2em;
+}
+ul li a{
+    display:block;
+    list-style-type: none;
+    color: hotpink;
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
