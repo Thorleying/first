@@ -1,0 +1,28 @@
+.videogo{
+    margin: 0 auto;
+    width: 1500px;
+    height: 1200px;
+    border: solid 1px darkolivegreen;
+    /*background-color: darkolivegreen;*/
+
+}
+.second{
+    padding-left: 220px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    color: firebrick;
+}
+p{
+    color: darkgray;
+    font-size: 18px;
+    display: block;
+    padding-left: 90px;
+}
+div{
+    background-image: url("../video/video1/img/3fff01de26df4fc2b2c71ffc3cf5f210.png");
+}
+body{
+    zoom: 4;
+}
