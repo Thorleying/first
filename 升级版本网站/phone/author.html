@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编程代码库-联系站长</title>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/author.js"></script>
+</head>
+<link rel="stylesheet" href="css/author.css">
+
+<body>
+    <div class="container">
+        <div class="nav-header">
+            <span title="编程代码库"><a href="moveindex.html">
+                <img src="image/bitbug_favicon.ico">编程代码库</a>
+            </span>
+            <!-- <span>不断发现优质编程资源</span> -->
+            <span><a href="html.html">
+                <img src="image/user.svg">账户
+            </span></a>
+            <span>
+                <img src="image/message-square.svg">联系站长
+            </span>
+            <span>
+                <img src="image/btn.png" width="20" class="btn-primary">
+            </span>
+        </div>
+        <hr>
+        <div class="nav-most">
+            <ul>
+                <li><a href='moveindex.html'>首 页</a></li>
+
+                <li><a href='#'>资 源</a></li>
+                <li><a href='#'>世 界</a></li>
+                <li><a href='html.html'>账户</a></li>
+            </ul>
+        </div>
+        <script>
+            $(function() {
+                $('.btn-primary').click(function() {
+                    $('.nav-most').slideToggle(500);
+                })
+            })
+        </script>
+        <div class="center">
+            <div class="author-self" title="站长:Thorleying">
+                <img src="image/bitbug_favicon.ico" width="100px">
+            </div>
+            <div class="center-self">
+                <span>本站站长:Thorleying</span>
+                <span>简介:一位初来程序员圈子的无名之辈,喜欢编程的BOY!任何不足之处,请多多指教!
+                </span>
+                <span>
+                    提取码:本站所有资源如需下载请联系站长！(点击头像有惊喜)
+                </span>
+            </div>
+            <div class="footer">
+                <p class="del">X</p>
+                <img src="image/zhanzhang.jpg" width="100" class="author">
+            </div>
+            <script>
+                $(function() {
+                    $('.del').click(function() {
+                        $('.footer').hide(500);
+                    })
+                })
+            </script>
+            <div class="author-pic">
+
+            </div>
+            <script>
+                var img = document.querySelector('.center').querySelector('img');
+                var pic = document.querySelector('.author-pic');
+                img.addEventListener('click', function() {
+                        alert('站长是位帅哥喔！');
+                    })
+                    //img.addEventListener('mouseover', function() {
+                    //   pic.style.display = 'block';
+                    //})
+                    // img.addEventListener('mouseout', function() {
+                    //    pic.style.display = 'none';
+                    // })
+            </script>
+        </div>
+</body>
+<script>
+</script>
+
+</html>

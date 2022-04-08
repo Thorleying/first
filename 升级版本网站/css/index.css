@@ -1,0 +1,465 @@
+        /* 1 超小屏幕下 小于768 布局容器的宽度为100%
+    /* 
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        min-width: 320px;
+        max-width: 760px;
+        height: 2000px;
+    }
+    .nav {
+        display: none;
+    }
+} */
+        /*     
+    @media screen and (max-width: 767px) {
+        .container {
+            width: 100%;
+            min-width: 400px;
+            max-width: 767px;
+            background-position: 45%;
+        }
+        .nav ul {
+            display: none;
+            width: 30px;
+            height: 30px;
+        }
+        .nav {
+            position: relative;
+        }
+        li {
+            top: -35px;
+            left: 340px;
+            position: absolute;
+        }
+    }
+    /* 电脑 */
+        /*     
+    @media screen and (min-width: 90px) {
+        body {
+            background-color: pink;
+            width: 100%;
+            height: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav li {
+            /* display: none; */
+        /* list-style-type: none;
+        }
+        .container {
+            margin: 0 auto;
+            display: flex;
+            width: 1250px;
+            height: 100%;
+            background-color: palegreen;
+        }
+        .container-header {
+            position: relative;
+            width: 100%;
+            height: 49px;
+        }
+        .container-header-logo {
+            width: 18%;
+            border: solid 1px red;
+            margin-left: 15px;
+            padding-top: 5px;
+            box-sizing: border-box;
+        }
+        .container-header-logo:hover {
+            cursor: pointer;
+        }
+        .container-header-logo img {
+            vertical-align: middle;
+        }
+        .container-header-logo span {
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav ul li {
+            font-weight: 500px;
+            height: 100%;
+            position: absolute;
+            top: -3px;
+            ;
+            left: 250px;
+            text-align: center;
+            line-height: 47px;
+            display: flex;
+            display: block;
+            border: 1px solid red;
+        }
+        .nav ul li img {
+            vertical-align: middle;
+        }
+        .nav ul li:hover {
+            transition: 0.1s;
+            cursor: pointer;
+            border-bottom: solid 2px dodgerblue;
+        }
+        .nav ul li:nth-child(2) {
+            width: 5%;
+            display: block;
+            margin-left: 100px;
+        }
+        .nav ul li:nth-child(3) {
+            display: block;
+            width: 5%;
+            margin-left: 200px;
+        }
+        .nav ul li:nth-child(4) {
+            display: block;
+            width: 5%;
+            margin-left: 750px;
+        }
+        .nav ul li:nth-child(5) {
+            display: block;
+            margin-left: 850px;
+            width: 8%;
+        }
+        .nav ul li:nth-child(5):hover {
+            color: dodgerblue;
+        }
+        .nav ul li:nth-child(6) {
+            width: 25%;
+            margin-left: 320px;
+        }
+        .nav ul li:nth-child(6) input {
+            width: 100%;
+            height: 50%;
+            border-radius: 5px;
+            outline: none;
+            border-color: dodgerblue;
+        }
+    } */
+        
+        @media screen and (min-width: 1200px) {}
+        
+        .container {
+            width: 95%;
+            height: 2000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .nav {
+            position: relative;
+            /* background-color: white; */
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        body {
+            min-width: 1080px;
+            width: 100%;
+            height: 100%;
+            margin-top: 30px;
+            /* background-image: url("bgi.jpeg"); */
+            background-color: papayawhip;
+            background-position: cover;
+        }
+        
+        .nav img {
+            vertical-align: middle;
+        }
+        
+        .nav {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            /* background-color: pink; */
+            justify-self: space-around;
+        }
+        
+        .header-logo {
+            font-weight: bold;
+            font-size: 18px;
+            /* border: solid 1px red; */
+        }
+        
+        .header-logo:hover {
+            color: dodgerblue;
+        }
+        
+        div span {
+            flex: 0.2;
+            /*不用设置宽 直接分为几等分*/
+            height: 30px;
+            /* background-color: red; */
+            margin-right: 1px;
+            line-height: 30px;
+            text-align: center;
+            margin-right: 35px;
+        }
+        
+        div.nav span:hover {
+            border-bottom: solid 2px dodgerblue;
+            cursor: pointer;
+        }
+        
+        div span:nth-child(1) {
+            flex: 0.8;
+            margin-left: -50px;
+            border-bottom: none;
+        }
+        
+        div span:nth-child(1):hover {
+            border-bottom: none;
+        }
+        
+        div span:nth-child(5):hover {
+            border-bottom: none;
+        }
+        
+        div span:nth-child(5) {
+            flex: 0.8;
+        }
+        
+        div span:nth-child(6) {
+            margin-right: 20px;
+        }
+        
+        div span:nth-child(7) {
+            flex: 0.3;
+        }
+        
+        .nav-login ul li {
+            list-style: none;
+            /* display: none; */
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .lnav ul {
+            display: none;
+            margin-left: -25px;
+        }
+        
+        .lnav ul li {
+            color: dodgerblue;
+            background-color: ghostwhite;
+            /* border: solid 1px red; */
+            display: block;
+        }
+        /* .qnav ul li {} */
+        
+        .lnav,
+        .qnav {
+            margin-top: 3px;
+            margin-left: -50px;
+        }
+        
+        .qnav ul {
+            display: none;
+        }
+        
+        .qnav ul li {
+            margin-left: -28px;
+        }
+        /*换皮肤*/
+        
+        .change-background {
+            display: flex;
+            width: 485px;
+            margin-left: 10px;
+            position: relative;
+            height: 55px;
+            /* border: solid 1px red; */
+        }
+        
+        .change-background span:nth-child(1) {
+            margin-left: 0px;
+        }
+        
+        .change-background span {
+            position: relative;
+            flex: 1;
+        }
+        
+        .btn {
+            margin-bottom: 8px;
+            background-color: papayawhip;
+            outline: none;
+            border-radius: 10px;
+            outline: none;
+        }
+        /* .change-background ul li {
+            position: absolute;
+            float: flex;
+            margin-top: -25px;
+        } */
+        /* .change-background ul li:nth-child(2) {
+            margin-left: 100px;
+        }
+        
+        .change-background ul li:nth-child(3) {
+            margin-left: 200px;
+        } */
+        /*中间*/
+        
+        .center {
+            display: flex;
+            width: 100%;
+            height: 292px;
+            /* border: solid 2px dodgerblue; */
+        }
+        
+        .center div {
+            flex: 1.2;
+            margin-left: 5px;
+            border: solid 2px dodgerblue;
+        }
+        
+        .center div:nth-child(1) {
+            flex: 0.7;
+            border: solid 2px dodgerblue;
+            box-shadow: dodgerblue 1px 1px;
+            /* border:solid 1px red; */
+            /* box-shadow: 2px 2px grey; */
+            /* border: solid 2px dodgerblue; */
+        }
+        /* 左边导航栏 */
+        
+        .center-nav {
+            width: 100%;
+        }
+        
+        .center-nav-all {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 0px;
+            margin-left: -40px;
+        }
+        
+        .center-nav ul li {
+            flex: 1;
+            /* text-align: center; */
+            line-height: 40px;
+            /* margin-top: 5px; */
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        
+        .center-nav ul li::after {
+            content: ">";
+            padding-left: 68px;
+        }
+        
+        .center-nav ul li:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            background-color: dodgerblue;
+            color: white;
+        }
+        /*footer部位*/
+        
+        .footer {
+            width: 100%;
+            display: flex;
+        }
+        
+        .footer div {
+            flex: 1.2;
+        }
+        
+        .footer div:nth-child(1) {
+            height: 292px;
+            /* background-color: pink; */
+            border: solid 2px dodgerblue;
+            margin-left: 0px;
+        }
+        
+        .footer div:nth-child(2) {
+            height: 292px;
+            margin-left: 5px;
+            border: solid 2px dodgerblue;
+            /* background-color: orange; */
+        }
+        
+        .footer div:nth-child(3) {
+            height: 292px;
+            margin-left: 5px;
+            border: solid 2px dodgerblue;
+            /* background-color: green; */
+        }
+        
+        .footer div:nth-child(4) {
+            height: 292px;
+            margin-left: 5px;
+            border: solid 2px dodgerblue;
+            /* background-color: purple; */
+        }
+        
+        .footer div:nth-child(5) {
+            height: 292px;
+            margin-left: 5px;
+            border: solid 2px dodgerblue;
+            /* background-color: green; */
+        }
+        /* .center-nav ul li:nth-child(1) {
+        background-color: red;
+    }
+    
+    .center-nav ul li:nth-child(2) {
+        background-color: blue;
+    }
+    
+    .center-nav ul li:nth-child(3) {
+        background-color: darkred;
+    }
+    
+    .center-nav ul li:nth-child(4) {
+        background-color: green;
+    }
+    
+    .center-nav ul li:nth-child(5) {
+        background-color: dodgerblue;
+    } */
+        /*底部*/
+        
+        .thefooterlast {
+            width: 100%;
+            height: 50;
+            background: pink;
+        }
+        /*搜索*/
+        
+        .Companies ul li {
+            background-color: white;
+            text-align: center;
+            /* margin-left: -10px; */
+        }
+        
+        .Companies ul li a {
+            color: dodgerblue;
+        }
+        
+        .Companies ul {
+            width: 200px;
+            height: 150px;
+            overflow-y: scroll;
+            display: none;
+        }
+        
+        .Companies input {
+            width: 200px;
+            height: 25px;
+            outline: none;
+            border-radius: 5px;
+            margin-left: 40px;
+            border: solid 1px dodgerblue;
+        }
+        
+        .Companies {
+            position: absolute;
+        }

@@ -1,0 +1,431 @@
+body {
+    width: 100%;
+    min-width: 380px;
+    max-width: 762px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, 'Helvetica Neue', sans-serif;
+    color: #666;
+    line-height: 1.5;
+    background-color: ghostwhite;
+    height: 1300px;
+}
+
+.container {
+    width: 100%;
+    height: 200px;
+}
+
+
+/* nav 导航栏 部分*/
+
+.nav-header {
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.nav-header span {
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+}
+
+.nav-header span:nth-child(1) {
+    padding-top: 5px;
+    flex: 2;
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+    /* background-color:green; */
+}
+
+.nav-header span:nth-child(2):hover {
+    border-bottom: 2px solid dodgerblue;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.nav-header span:nth-child(2) a:hover {
+    color: dodgerblue;
+}
+
+.nav-header span:nth-child(3):hover {
+    border-bottom: 2px solid dodgerblue;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.nav-header span img {
+    vertical-align: middle;
+}
+
+
+/* .nav-header span:nth-child(2) {
+    flex: 2;
+    font-weight: bold;
+    color: dodgerblue;
+    text-align: center;
+    line-height: 40px;
+    /* background-color: pink; */
+
+.nav-header span:nth-child(2) {
+    flex: 1;
+    /* background-color: green; */
+    padding-top: 8px;
+    text-align: center;
+}
+
+.nav-header span:nth-child(3) {
+    flex: 1.5;
+    padding-top: 8px;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.nav-header span:nth-child(4) {
+    flex: 1;
+    padding-top: 8px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.nav-header span:nth-child(4) ul {
+    list-style-type: none;
+    width: 70px;
+    display: block;
+    display: none;
+}
+
+.nav-header span:nth-child(4) ul li {
+    background-color: pink;
+    z-index: 1111111;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+span a {
+    color: grey;
+    text-decoration: none;
+}
+
+
+/*另加下滑栏效果*/
+
+.nav-most {
+    width: 100%;
+    min-width: 380px;
+    max-width: 762px;
+    margin: 0 auto;
+    height: 120px;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 100;
+    display: none;
+    margin: 0 auto;
+    background-color: ghostwhite;
+}
+
+.nav-most ul li {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.nav-most ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+
+/*中间部分*/
+
+.center {
+    width: 100%;
+    height: 450px;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+}
+
+.object {
+    width: 100%;
+    height: 130px;
+    border: 1px solid dodgerblue;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.nav-nav {
+    width: 100%;
+    height: 30px;
+    background-color: palegreen;
+    margin-bottom: 5px;
+}
+
+.center ul {
+    display: flex;
+}
+
+.center ul li:nth-child(1) {
+    flex: 1;
+    margin-left: -50px;
+}
+
+.center ul li {
+    list-style: none;
+    float: left;
+    font-size: 15px;
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/*具体商品*/
+
+.object {
+    display: flex;
+}
+
+.object div {
+    float: left;
+    flex: 1;
+}
+
+.object div:nth-child(1) {
+    flex: 0.6;
+}
+
+.obj {
+    margin-top: 10px;
+}
+
+.one-price {
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 6%;
+}
+
+.num a {
+    text-decoration: none;
+    color: black;
+}
+
+.num input {
+    width: 20%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.all-price {
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 5%;
+}
+
+
+/*删除按钮*/
+
+.del-checked {
+    width: 80px;
+    height: 30px;
+    background-color: dodgerblue;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.del-all,
+.del-checked,
+.allprice2 {
+    float: left;
+    margin-right: 10px;
+}
+
+.del-all {
+    width: 80px;
+    height: 30px;
+    background-color: dodgerblue;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.allprice2 {
+    width: 140px;
+    height: 30px;
+    background-color: dodgerblue;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.sum {
+    width: 80px;
+    height: 30px;
+    background-color: orange;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+}
+
+.btn div {
+    flex: 1;
+}
+
+
+/*固定下栏*/
+
+.nav-footer {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    bottom: 10px;
+    display: flex;
+}
+
+.nav-footer span {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.nav-footer span img {
+    vertical-align: middle;
+}
+
+.nav-footer span:nth-child(2) {
+    border-bottom: 4px solid dodgerblue;
+}
+
+
+/*支付弹框*/
+
+.tankuang {
+    width: 50%;
+    height: 150px;
+    background-color: ghostwhite;
+    border-radius: 15px;
+    position: relative;
+    z-index: 666;
+    margin: -70% auto;
+    display: none;
+}
+
+.tankuang span:nth-child(3) {
+    display: flex;
+}
+
+.tankuang h2 {
+    color: seagreen;
+}
+
+.tankuang span button {
+    flex: 0.5;
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tankuang span button:nth-child(1) {
+    position: absolute;
+    left: 10px;
+}
+
+.tankuang span button:nth-child(2) {
+    position: absolute;
+    right: 10px;
+}
+
+
+/*提示弹窗*/
+
+.tanchuang2 {
+    width: 50%;
+    height: 150px;
+    background-color: ghostwhite;
+    border-radius: 15px;
+    position: relative;
+    z-index: 6666;
+    margin: -70% auto;
+    display: none;
+}
+
+.tanchuang2 button {
+    border: none;
+    background-color: dodgerblue;
+    position: absolute;
+    color: white;
+    right: 20px;
+    bottom: 10px;
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*删除全选警告栏*/
+
+.warning {
+    width: 50%;
+    height: 150px;
+    background-color: ghostwhite;
+    border-radius: 15px;
+    position: relative;
+    z-index: 6666;
+    margin: -70% auto;
+    display: none;
+}
+
+.warning span button {
+    flex: 0.5;
+    outline: none;
+    width: 70px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: -30px;
+}
+
+.warning span button:nth-child(1) {
+    position: absolute;
+    left: 10px;
+}
+
+.warning span button:nth-child(2) {
+    position: absolute;
+    right: 10px;
+}
+
+.warning span:nth-child(2) {
+    display: flex;
+}

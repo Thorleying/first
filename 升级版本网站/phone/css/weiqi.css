@@ -1,0 +1,219 @@
+body {
+    width: 100%;
+    min-width: 380px;
+    max-width: 762px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, 'Helvetica Neue', sans-serif;
+    color: #666;
+    line-height: 1.5;
+    background-color: ghostwhite;
+    height: 900px;
+    border: 1px solid grey;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+
+/* nav 导航栏 部分*/
+
+.nav-header {
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.nav-header span {
+    position: relative;
+    flex: 1;
+}
+
+.nav-header span:nth-child(1) {
+    padding-top: 5px;
+    flex: 2;
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+    /* background-color:green; */
+    cursor: pointer;
+}
+
+.nav-header span:nth-child(2):hover {
+    border-bottom: 2px solid dodgerblue;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.nav-header span:nth-child(2) a:hover {
+    color: dodgerblue;
+}
+
+.nav-header span:nth-child(3):hover {
+    border-bottom: 2px solid dodgerblue;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.nav-header span img {
+    vertical-align: middle;
+}
+
+
+/* .nav-header span:nth-child(2) {
+    flex: 2;
+    font-weight: bold;
+    color: dodgerblue;
+    text-align: center;
+    line-height: 40px;
+    /* background-color: pink; */
+
+.nav-header span:nth-child(2) {
+    flex: 1;
+    /* background-color: green; */
+    padding-top: 8px;
+    text-align: center;
+}
+
+.nav-header span:nth-child(3) {
+    flex: 1.5;
+    padding-top: 8px;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+.nav-header span:nth-child(4) {
+    flex: 1;
+    padding-top: 8px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.nav-header span:nth-child(4) ul {
+    list-style-type: none;
+    width: 70px;
+    display: block;
+    display: none;
+}
+
+.nav-header span:nth-child(4) ul li {
+    background-color: pink;
+    z-index: 1111111;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.nav-header span:nth-child(1) a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-header span:nth-child(2) a {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-header span:nth-child(3) a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/*center部分*/
+
+.center-part a {
+    padding-top: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.center {
+    width: 90%;
+    height: 450px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.center h2 {
+    text-align: center;
+    color: black
+}
+
+.centerspans {
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: pink; */
+    display: flex;
+}
+
+.center span:nth-child(1) {
+    flex: 1;
+}
+
+.center span:nth-child(1) a {
+    color: grey;
+}
+
+.center span:nth-child(2) {
+    flex: 1.5;
+}
+
+.about {
+    width: 100%;
+    height: 250px;
+    margin-top: 5%;
+    /* background-color: pink; */
+}
+
+.about img {
+    display: block;
+    margin: 0 auto;
+}
+
+.center-footer {
+    margin-top: 4%;
+    /* background-color: pink; */
+    position: relative;
+    ;
+}
+
+.center-footer a {
+    color: dodgerblue;
+}
+
+
+/*另加下滑栏效果*/
+
+.nav-most {
+    width: 100%;
+    height: 120px;
+    background-color: ghostwhite;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+.nav-most ul li {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.nav-most ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+.btn-primary {
+    cursor: pointer;
+}

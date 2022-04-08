@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编程代码库</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<script src="js/index.js"></script>
+<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    if ((navigator.userAgent.match(/(phone|android|windows phone|pad|pod|iphone)/i))) {
+        window.location.href = "phone/moveindex.html";
+    }
+</script>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <span class="header-logo" title="编程代码库">
+            <img src="image/bitbug_favicon.ico">编程代码库
+        </span>
+            <span>
+                <img src="image/home.svg">首页
+            </span>
+            <span>
+                <img src="image/grid.svg">
+                资源</span>
+            <span>
+                <img src="image/world.svg">世界</span>
+            <span>
+                <form action="" class="basic-grey">
+                    <div class="form-group">
+                        <div class="Companies">
+                            <input class="form-control" type="text" placeholder="今日热门：象棋游戏代码" id="js-groupId">
+                            <input type="hidden" id="groupId">
+                            <ul id="groupid">
+                                <li data-id="826"><a href="3d旋转相册.html">3D旋转旋转相册源代码</a></li>
+                                <li data-id="825"><a href="时光隧道.html">时光隧道源代码</a></li>
+                                <li data-id="827"><a href="围棋源代码.html">围棋源代码</a></li>
+                                <li data-id="824"><a href="特效.html">特效源代码</a></li>
+                                <li data-id="823"><a href="代码雨.html">代码雨源代码</a></li>
+                                <li data-id="815"><a href="函数绘制.html">函数绘制源代码</a></li>
+                                <li data-id="814"><a href="吃豆游戏.html">吃豆游戏源代码</a></li>
+                                <li data-id="813"><a href="爱心源代码.html">爱心源代码</a></li>
+                                <li data-id="812"><a href="爱心飘落.html">爱心飘落源代码</a></li>
+                                <li data-id="811"><a href="玫瑰花.html">玫瑰花源代码</a></li>
+                                <li data-id="810"><a href="表白源代码.html">表白源代码</a></li>
+                                <li data-id="809"><a href="魔方游戏代码.html">魔方游戏源代码</a></li>
+                                <li data-id="808"><a href="雪花.html">雪花源代码</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    jQuery.expr[':'].Contains = function(a, i, m) {
+                        return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+                    };
+    
+                    function filterList(list) {
+                        $('#js-groupId').bind('input propertychange', function() {
+                            var filter = $(this).val();
+                            if (filter) {
+                                $matches = $(list).find('a:Contains(' + filter + ')').parent();
+                                $('li', list).not($matches).slideUp();
+                                $matches.slideDown();
+                            } else {
+                                $(list).find("li").slideDown();
+                            }
+                        });
+                    }
+                    $(function() {
+                        filterList($("#groupid"));
+                        $('#js-groupId').bind('focus', function() {
+                            $('#groupid').slideDown();
+                        }).bind('blur', function() {
+                            $('#groupid').slideUp();
+                        })
+                        $('#groupid').on('click', 'li', function() {
+                            $('#js-groupId').val($(this).text())
+                            $('#groupId').val($(this).data('id'))
+                            $('#groupid').slideUp()
+                        });
+                    })
+                </script>
+            </span>
+            <span class="nav-login">
+                <!-- <img src="user.svg">账号 -->
+                <ul class="lnav">
+                    <li>
+                        <a href="#"><img src="image/user.svg">账号</a>
+                        <ul>
+                            <li>登录</li>
+                            <li>注册</li>
+                            <li>反馈</li>
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+            <span>
+                <!-- <img src="message-square.svg">联系站长 -->
+                <ul class="qnav">
+                    <li>
+                        <a href="#"><img src="image/message-square.svg">联系站长</a>
+                        <ul>
+                            <li><img src="image/zhanzhang.jpg" width="95px"></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <!-- <button class="btn">66666</button>
+        <script>
+            var btn = document.querySelector('.btn');
+            btn.onclick = function() {
+                document.body.style.backgroundColor = 'red';
+            }
+        </script> -->
+        <hr color="dodgerblue">
+        <div class="change-background">
+            <button class="btn">粉色皮肤</button>
+            <!-- <ul class="nav-btn">
+                <li><button class="btn">随机皮肤</button>
+                    <ul>
+                        <li><img src="bgi.jpeg" width="95px"></li>
+                        <li><img src="bgi.jpeg" width="95px"></li>
+                        <li><img src="bgi.jpeg" width="95px"></li>
+                    </ul>
+                </li>
+            </ul> -->
+            <!-- <span><img src="bgi.jpeg" width="95px"></span>
+            <span><img src="2172.jpg" width="95px" height="55px"></span>
+            <span><img src="2173.jpeg" width="95px"></span>
+            <span><img src="2171.jpg" width="95px" height="55px"></span> -->
+        </div>
+        <script>
+            var imgs = document.querySelector('.change-background').querySelectorAll("img");
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].onclick = function() {
+                    document.body.style.backgroundImage = 'url(' + this.src + ')';
+                }
+            }
+
+            function getmaax(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            var str = ['pink'];
+
+            console.log(str);
+            var btn = document.querySelector('.btn');
+            var hr = document.querySelectorAll('hr');
+            //btn.onclick = function() {
+            // for (var i = 0; i < arguments.length; i++) {
+            //    document.body.style.backgroundColor = str[getmaax(0, 0)];
+            //    btn.style.backgroundColor = ' pink';
+            //   hr.style.Color = ' pink';
+
+            //    alert('更换成功');
+
+            // }
+            // }
+            btn.addEventListener('click', function() {
+                for (var i = 0; i < arguments.length; i++) {
+                    document.body.style.backgroundColor = str[getmaax(0, 0)];
+                    btn.style.backgroundColor = ' pink';
+                    hr.style.Color = ' pink';
+                }
+            })
+            btn.addEventListener('click', function() {
+                alert('更换成功');
+                this.disabled = true;
+            })
+        </script>
+        <div class="center">
+            <div class="center-nav">
+                <ul class="center-nav-all">
+                    <li>主页</li>
+                    <li>推荐</li>
+                    <li>源码</li>
+                    <li>世界</li>
+                    <li>日常</li>
+                    <li>其他</li>
+                </ul>
+            </div>
+            <div>
+                <h3 align="center">html专区</h3>
+                <p></p>
+            </div>
+            <div>
+                <h3 align="center">css专区</h3>
+                <p></p>
+            </div>
+            <div>
+                <h3 align="center">javascript专区</h3>
+                <p></p>
+            </div>
+            <div>
+                <h3 align="center">jQuery专区</h3>
+                <p></p>
+            </div>
+        </div>
+        <hr color="dodgerblue">
+        <div class="footer">
+            <div>
+                <h3 align="center">五子棋源代码</h3>
+                <p></p>
+            </div>
+            <div>
+                <h3 align="center">爱心飘落源代码</h3>
+                <p></p>
+            </div>
+            <div>
+                <h3 align="center">围棋源代码</h3>
+                <p></p>
+            </div>
+            <div>
+                <h3 align="center">围棋源代码</h3>
+                <p></p>
+            </div>
+            <div>
+                <h3 align="center">围棋源代码</h3>
+                <p></p>
+            </div>
+        </div>
+        <hr>
+        <div class="thefooterlast">
+            <span></span>
+        </div>
+
+    </div>
+
+    <script>
+        var nav = document.querySelector('.lnav');
+        var lis = nav.children;
+        for (var i = 0; i < lis.length; i++) {
+            lis[0].onmouseover = function() {
+                this.children[1].style.display = 'block';
+            }
+            lis[0].onmouseout = function() {
+                this.children[1].style.display = 'none';
+            }
+        }
+        var qnav = document.querySelector('.qnav');
+        var lis = qnav.children;
+        for (var i = 0; i < lis.length; i++) {
+            lis[0].onmouseover = function() {
+                this.children[1].style.display = 'block';
+            }
+            lis[0].onmouseout = function() {
+                this.children[1].style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
