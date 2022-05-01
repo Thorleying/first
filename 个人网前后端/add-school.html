@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>学习导航-全国高校官网查询</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1 user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="layui-v2.6.8/layui/css/layui.css">
+</head>
+
+<body>
+    <!-- navbar top -->
+    <div class="navbar-top">
+        <div class="side-nav-panel-left"><a href="#" data-activates="slide-out-left" class="side-nav-left"><i class="fa fa-bars"></i></a></div>
+        <!-- site brand -->
+        <div class="site-brand">
+            <a href="index.html">
+                <h1>学习导航</h1>
+            </a>
+        </div>
+        <!-- end site brand -->
+        <div class="side-nav-panel-right"><a href="contact.html" class="side-nav-right"><i class="fa fa-envelope-o"></i></a></div>
+    </div>
+    <!-- end navbar top -->
+    <!-- 登陆左边的导航栏 -->
+    <div class="side-nav-panel-left">
+        <ul id="slide-out-left" class="side-nav side-nav-panel collapsible">
+            <li class="profil"><img src="img/author.jfif" alt="">
+                <h2>Thorleying</h2>
+                <h6>一位热爱编程的人</h6>
+            </li>
+            <li class="li-top"><a href="index.html"><i class="fa fa-home"></i>主页</a></li>
+            <li>
+                <!-- <div class="collapsible-header"><i class="fa fa-shopping-cart"></i>Shop <span><i class="fa fa-caret-down"></i></span></div>
+                <div class="collapsible-body">
+                    <ul class="side-nav-panel">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="shop-single.html">Shop Single</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                    </ul>
+                </div> -->
+            </li>
+            <li>
+                <a href="recomend.php"><i class="fa fa-file-o"></i>评论区</a>
+            </li>
+            <li>
+                <a href="information-col.html"><i class="fa fa-bold"></i>信息采集</a>
+            </li>
+            <!-- <li><a href="about-us.html"><i class="fa fa-user"></i>About Us</a></li>
+            <li><a href="contact.html"><i class="fa fa-envelope-o"></i>Contact Us</a></li> -->
+            <li>
+                <a href="school.php"><i class="layui-icon layui-icon-read"></i>全国高校官网大全</a>
+            </li>
+            <li><a href="login.html"><i class="layui-icon-user layui-icon"></i>管理员登录</a></li>
+            <li><a href="max-login.html"><i class="layui-icon-username layui-icon"></i>超级管理员</a></li>
+        </ul>
+    </div>
+    <div class="all">
+        <br>
+        <h3 align="center">全国高校官网添加</h3>
+        <hr>
+        <form class="layui-form" action="postschool.php" method="post">
+            <div class="layui-form-item">
+                <label class="layui-form-label">姓名</label>
+                <div class="layui-input-block">
+                    <input type="text" name="sn" lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input a4" style='width:80%'>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">高校</label>
+                <div class="layui-input-block">
+                    <input type="text" name="gn" lay-verify="required" placeholder="请输入高校名称" autocomplete="off" class="layui-input a2" style='width:80%'>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">简介</label>
+                <div class="layui-input-block">
+                    <textarea name="ss" required lay-verify="required" placeholder="学校简介" class="layui-textarea a1" style="width:80%"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">简介</label>
+                <div class="layui-input-block">
+                    <input type="text" name="sa" lay-verify="required" placeholder="学校链接" autocomplete="off" class="layui-input a3" style='width:80%'>
+                </div>
+            </div>
+            <div class='allbtn' style='margin-left:30%;margin-bottom:10px;width:100%;'>
+                <input type='submit' class="layui-btn btn" lay-submit lay-filter="formDemo" name="selsub" value="上传">
+                <input type="reset" class="layui-btn layui-btn-primary" value="重置">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="layui-v2.6.8/layui/layui.js"></script>
+    <script>
+        var a1 = document.querySelector('.a1');
+        var a2 = document.querySelector('.a2');
+        var a3 = document.querySelector('.a3');
+        var a4 = document.querySelector('.a4');
+        var btn = document.querySelector('.btn');
+        btn.addEventListener('click', function() {
+            if (a1.value == "" && a3.value == "" && a4.value == "" && a2.value == "") {
+
+            } else {
+                alert("高校信息上传成功");
+            }
+        })
+    </script>
+    <div class="section find-us">
+        <div class="container">
+            <div class="section-head">
+                <h4>联系站长</h4>
+                <div class="underline"></div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="content"><i class="layui-icon-cellphone layui-icon"></i>
+                        <h5>电话</h5>
+                        <p>1234567891011</p>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="content"><i class="layui-icon-email layui-icon"></i>
+                        <h5>邮箱</h5>
+                        <p>123456@qq.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="content"><i class="layui-icon-login-wechat layui-icon"></i>
+                        <h5>微信</h5>
+                        <p>fan123456</p>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="content"><i class="layui-icon-login-qq layui-icon"></i>
+                        <h5>QQ</h5>
+                        <p>123456</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="social-media"><a href=""><i class="fa fa-facebook"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-google"></i></a><a href=""><i class="fa fa-linkedin"></i></a><a href=""><i class="fa fa-instagram"></i></a></div> -->
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="copyright"><span>© 2022 学习导航 高校官网</span></div>
+        </div>
+    </div>
+    <!-- end footer -->
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
